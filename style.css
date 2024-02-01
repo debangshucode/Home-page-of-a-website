@@ -1,0 +1,436 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family:Poppins;
+}
+body {
+    background-color:#59595C;
+    overflow-x: hidden;
+}
+.nav_bar{
+    background-color: black;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo{
+    font-size: 30px;
+    
+    color: rgba(14, 109, 217, 0.826);
+}
+.nav_bar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px 20px;
+}
+.nav_bar ul i{
+    font-size: 25px;
+    cursor: pointer;
+    transition: ease 0.5s;
+    color: white;
+}
+.nav_bar ul i:hover{
+    color:rgba(14, 109, 217, 0.826); 
+}
+
+.nav_bar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    position: relative;
+}
+.nav_bar ul li a::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: rgba(14, 109, 217, 0.826);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+.nav_bar ul li a:hover::after{
+    width: 100%;
+}
+.nav_search{
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: none;
+}
+.nav_search input {
+    height: 20px;
+    width: 90%;
+    border: none;
+    background: rgb(193, 193, 193);
+    border-radius: 30px;
+    height: 25px;
+    padding-left: 5px;
+    outline: none;
+    transition: all 0.8s;
+}
+.nav_search input:hover{
+    border: 1.5px solid rgba(14, 109, 217, 0.826);;
+}
+.search_icon {
+    cursor: pointer;
+    color: white;
+}
+.search_icon:hover {
+    color: rgba(14, 109, 217, 0.826);
+}
+
+
+
+
+/* about */
+
+.about{
+    height:400px ;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+    overflow: hidden;
+    background-color:black;
+    box-shadow: 0px 32px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.text {
+    height : 100px;
+    width: 100%;
+}
+.about_logo {
+    height: 100px;
+    width: 100%;
+    display: flex;
+}
+.about_logo h1 {
+    color: white;
+    font-size: 100px;
+}
+.text h2 {
+    color: rgba(14, 109, 217, 0.826);
+    font-size: 20px;
+}
+.text span{
+    color:  white ;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/* main */
+.main {
+    height: 350px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    background-color: black;
+    overflow: hidden;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    box-shadow: 0px 32px 32px 0 rgba(0, 0, 0, 0.37);
+    
+}
+.sub_main {
+    display: flex;
+    height: 90%;
+    align-items: center;
+}
+
+
+.main .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 160px;
+    width: 200px;
+    margin: 5px;
+    padding: 10px;
+    background: linear-gradient(135deg, rgba(255, 255, 255,0.1), rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 2px solid rgba(0,0,0,0.37);
+    transition: all ease-in-out 0.5s;  
+    overflow: hidden;
+    box-shadow: 0px 8px 32px 0 rgba(0,0,0,0.37);   
+}
+.main .cards:hover {
+    width: 250px;
+    cursor: pointer;
+    border: 2px rgba(14, 109, 217, 0.826) solid;
+} 
+
+.cards p{
+    font-size: 18px;
+    color: white;
+    z-index: 3;
+    text-align: center;
+    
+}
+.cards a{
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+    font-size: 25px;
+}
+
+
+/* submit */
+
+
+.submit {
+    height: 250px;
+    width: 100%;
+    margin-top: 20px;
+    background-color:black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0px 32px 32px 0 rgba(0, 0, 0, 0.37);
+}
+.submit_msg{
+    width: 35%;
+    margin: 5px;
+}
+.dropbox{
+    width: 65%;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.submit input{
+    display: none;
+}
+
+.submit label {
+    height: 190px;
+    width: 350px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+    border: 2px dashed #999;
+    transition: all ease-in 0.5s;
+    cursor: pointer;
+}
+.submit label:hover{
+    color: rgba(14, 109, 217, 0.826);
+    border: 2px dashed rgba(14, 109, 217, 0.826);
+}
+.submit_msg p {
+    color: white;
+    text-align: center;
+}
+
+/* footer */
+.footer {
+    width: 100%;
+    height: 700px;
+    margin-top: 20px;
+    background-color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 25px;
+    box-shadow: 0px 32px 32px 0 rgba(0, 0, 0, 0.37);
+}
+.footer_text {
+    margin-top: 20px;
+    height:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 10px;
+}
+.footer_text p {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+.footer_text p span {
+    color: red;
+    font-weight: 600;
+    
+}
+.footup {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact{
+    display: grid;
+    align-items: center;
+    width: 35%;
+    cursor: pointer;
+}
+.sub_title {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.contact p {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.contact p i {
+    margin-right: 10px;
+    font-size: 25px;
+    
+}
+.feedback {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 8px;
+    margin: 5px 0;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 6px;
+}
+form .btn2 {
+    padding: 8px 10px;
+    font-size: 13px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.nav_bar .fas{
+    display:none;
+}
+/* ----------------------------------css for small screens-------------------------------- */
+@media only screen and (max-width:600px){
+    .logo{
+        font-size: 25px;
+    }
+    .nav_bar .fas{
+        display:block;
+        font-size: 25px;
+        color: white;
+    }
+    .nav_bar ul{
+        background: rgba(14, 109, 217);
+        position: fixed;
+        top:0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    .nav_bar ul li{
+        display: block;
+        margin: 25px;
+    }
+    .nav_bar ul .fas{
+        position: absolute;
+        top:25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .nav_bar ul .fa-solid{
+        position: absolute;
+        top:25px;
+        left: 140px;
+        cursor: pointer;
+    }
+    .nav_search input{
+        width: 80%;
+    }
+    .nav_search {
+        width: 50%;
+    }
+    .about_logo h1 {
+        color: white;
+        font-size: 70px;
+    }
+    .text h2,.text span{
+        font-size: 18px;
+    }
+    .main  {
+        overflow-x: auto ;
+    }
+    .main .cards{
+        width: 150px;
+        height: 100px;
+    }
+    .cards p{
+        font-size: 12px;
+        
+    }
+    .cards a{
+        font-size: 20px;
+    }
+    .submit label {
+        width: 170px;
+    }
+    .submit_msg p{
+        font-size: 12px;
+    }
+    form input, form textarea{
+        width: 90%;
+        background: #262626;
+        padding: 5px;
+        margin: 2px 10px ;
+        font-size: 11px;
+    }
+    .contact p {
+        font-size: 12px;
+    }
+    .contact p i {
+        font-size: 15px;
+    }
+    .footup{
+        flex-wrap: wrap;
+    }
+    .contact{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .feedback{
+        width: 100%;
+        justify-content: center;
+    }
+    form .btn2 {
+        padding: 5px 7px;
+        font-size: 12px;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+    .footer_text {
+        align-items: flex-start;
+    }
+    .footer_text p {
+        font-size: 18px;
+    }
+    
+
+}
+
+
